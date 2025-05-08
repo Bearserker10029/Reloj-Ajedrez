@@ -1,0 +1,290 @@
+Analysis & Synthesis report for reloj_ajedrez
+Thu May 08 00:55:12 2025
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Thu May 08 00:55:12 2025           ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; reloj_ajedrez                               ;
+; Top-level Entity Name              ; reloj_ajedrez                               ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M08DAF484C8G     ;                    ;
+; Top-level entity name                                                      ; reloj_ajedrez      ; reloj_ajedrez      ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Thu May 08 00:54:55 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_ajedrez -c reloj_ajedrez
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file bintobcd.vhd
+    Info (12022): Found design unit 1: bintobcd-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file bintobcd1.vhd
+    Info (12022): Found design unit 1: bintobcd1-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd1.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd1.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file cod4a2.vhd
+    Info (12022): Found design unit 1: cod4a2-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cod4a2.vhd Line: 15
+    Info (12023): Found entity 1: cod4a2 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cod4a2.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
+    Info (12022): Found design unit 1: comparador-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/comparador.vhd Line: 14
+    Info (12023): Found entity 1: comparador File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/comparador.vhd Line: 7
+Info (12021): Found 1 design units, including 0 entities, in source file component_reloj.vhd
+    Info (12022): Found design unit 1: component_reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj.vhd Line: 7
+Info (12021): Found 1 design units, including 0 entities, in source file component_reloj_ajedrez.vhd
+    Info (12022): Found design unit 1: component_reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj_ajedrez.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file cont_mov_j.vhd
+    Info (12022): Found design unit 1: cont_mov_j-cont File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 14
+    Info (12023): Found entity 1: cont_mov_j File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 5
+Info (12021): Found 1 design units, including 0 entities, in source file contador_components.vhd
+    Info (12022): Found design unit 1: contador_components File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador_components.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file contador255.vhd
+    Info (12022): Found design unit 1: Contador255-cont File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador255.vhd Line: 16
+    Info (12023): Found entity 1: Contador255 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador255.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_hour.vhd
+    Info (12022): Found design unit 1: counter_mod_hour-counter_mod_hour File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_hour.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_hour File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_hour.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_min.vhd
+    Info (12022): Found design unit 1: counter_mod_min-counter_mod_min File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_min.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_min File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_min.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_seg.vhd
+    Info (12022): Found design unit 1: counter_mod_seg-counter_mod_seg File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_seg.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_seg File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_seg.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file deco2a4.vhd
+    Info (12022): Found design unit 1: deco2a4-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/deco2a4.vhd Line: 15
+    Info (12023): Found entity 1: deco2a4 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/deco2a4.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file divisor_freq.vhd
+    Info (12022): Found design unit 1: divisor_freq-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/divisor_freq.vhd Line: 29
+    Info (12023): Found entity 1: divisor_freq File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/divisor_freq.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file ff_d.vhd
+    Info (12022): Found design unit 1: ff_d-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/ff_d.vhd Line: 15
+    Info (12023): Found entity 1: ff_d File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/ff_d.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
+    Info (12022): Found design unit 1: fsm-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 14
+    Info (12023): Found entity 1: fsm File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file fsm_pierde.vhd
+    Info (12022): Found design unit 1: fsm_pierde-fsm_pierde File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm_pierde.vhd Line: 12
+    Info (12023): Found entity 1: fsm_pierde File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm_pierde.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file hexa.vhd
+    Info (12022): Found design unit 1: hexa-structural_0 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/hexa.vhd Line: 19
+    Info (12023): Found entity 1: hexa File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/hexa.vhd Line: 14
+Info (12021): Found 2 design units, including 1 entities, in source file mux4a1.vhd
+    Info (12022): Found design unit 1: mux4a1-mux File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/mux4a1.vhd Line: 15
+    Info (12023): Found entity 1: mux4a1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/mux4a1.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reg_d.vhd
+    Info (12022): Found design unit 1: reg_d-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d.vhd Line: 16
+    Info (12023): Found entity 1: reg_d File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reg_d1.vhd
+    Info (12022): Found design unit 1: reg_d1-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d1.vhd Line: 18
+    Info (12023): Found entity 1: reg_d1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d1.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reloj.vhd
+    Info (12022): Found design unit 1: reloj-reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 24
+    Info (12023): Found entity 1: reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file sincronizador.vhd
+    Info (12022): Found design unit 1: sincronizador-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/sincronizador.vhd Line: 23
+    Info (12023): Found entity 1: sincronizador File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/sincronizador.vhd Line: 4
+Warning (12125): Using design file reloj_ajedrez.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: reloj_ajedrez-reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 21
+    Info (12023): Found entity 1: reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 6
+Info (12127): Elaborating entity "reloj_ajedrez" for the top level hierarchy
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div_freq" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 45
+Info (12128): Elaborating entity "sincronizador" for hierarchy "sincronizador:sincro" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 50
+Info (12128): Elaborating entity "reloj" for hierarchy "reloj:relojjugador_0" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 69
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:relojjugador_0|divisor_freq:div" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 49
+Info (12128): Elaborating entity "counter_mod_seg" for hierarchy "reloj:relojjugador_0|counter_mod_seg:cont_60" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 62
+Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 69
+Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:relojjugador_0|bintobcd:bin1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 72
+Info (12128): Elaborating entity "hexa" for hierarchy "reloj:relojjugador_0|hexa:hexa_1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 74
+Info (12128): Elaborating entity "counter_mod_min" for hierarchy "reloj:relojjugador_0|counter_mod_min:cont_min" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 83
+Info (12128): Elaborating entity "counter_mod_hour" for hierarchy "reloj:relojjugador_0|counter_mod_hour:cont_2" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 105
+Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp3" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 111
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 116
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "ini_pausa_j0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "ini_pausa_j1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_sel" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_j0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_j1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "loadbonus" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
+Warning (10631): VHDL Process Statement warning at fsm.vhd(19): inferring latch(es) for signal or variable "fase_actual_j0", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at fsm.vhd(19): inferring latch(es) for signal or variable "fase_actual_j1", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 19
+Warning (10492): VHDL Process Statement warning at fsm.vhd(41): signal "min_value_1hora_j0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at fsm.vhd(41): signal "mov_j0_gt_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at fsm.vhd(48): signal "min_value_1hora_j1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at fsm.vhd(48): signal "mov_j1_gt_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at fsm.vhd(55): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at fsm.vhd(57): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at fsm.vhd(59): signal "ini_pausa_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at fsm.vhd(61): signal "ini_pausa_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at fsm.vhd(65): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 65
+Warning (10631): VHDL Process Statement warning at fsm.vhd(30): inferring latch(es) for signal or variable "fase_actual_j0", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Warning (10631): VHDL Process Statement warning at fsm.vhd(30): inferring latch(es) for signal or variable "fase_actual_j1", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Warning (10631): VHDL Process Statement warning at fsm.vhd(30): inferring latch(es) for signal or variable "borrar_j0", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Warning (10631): VHDL Process Statement warning at fsm.vhd(30): inferring latch(es) for signal or variable "borrar_j1", which holds its previous value in one or more paths through the process File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Info (10041): Inferred latch for "borrar_j1" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Info (10041): Inferred latch for "borrar_j0" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Info (10041): Inferred latch for "fase_actual_j1" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Info (10041): Inferred latch for "fase_actual_j0" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Info (10041): Inferred latch for "fase_actual_j1" at fsm.vhd(19) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 19
+Info (10041): Inferred latch for "fase_actual_j0" at fsm.vhd(19) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 19
+Error (10028): Can't resolve multiple constant drivers for net "fase_actual_j0" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Error (10029): Constant driver at fsm.vhd(19) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 19
+Error (10028): Can't resolve multiple constant drivers for net "fase_actual_j1" at fsm.vhd(30) File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 30
+Error (12152): Can't elaborate user hierarchy "fsm:fsm1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 116
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 22 warnings
+    Error: Peak virtual memory: 4964 megabytes
+    Error: Processing ended: Thu May 08 00:55:12 2025
+    Error: Elapsed time: 00:00:17
+    Error: Total CPU time (on all processors): 00:00:42
+
+

@@ -24,6 +24,21 @@ begin
       fase_actual_j1 <= '0';
     elsif rising_edge(clk) then
       estado_actual <= estado_siguiente;
+    
+      -- Actualización de fases solo en flanco de reloj
+      if modo_sync = "10" then
+        if mov_j0_gt40 = '1' and fase_actual_j0 = '0' then
+          fase_actual_j0 <= '1';
+        elsif fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0' then
+          fase_actual_j0 <= '0'; -- Reset fase si se cumple condición
+        end if;
+        
+        if mov_j1_gt40 = '1' and fase_actual_j1 = '0' then
+          fase_actual_j1 <= '1';
+        elsif fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0' then
+          fase_actual_j1 <= '0'; -- Reset fase si se cumple condición
+        end if;
+      end if;
     end if;
   end process;
 
@@ -33,22 +48,9 @@ begin
     load2 <= '0';
     pierde_j0 <= '0';
     pierde_j1 <= '0';
-
-    if modo_sync = "10" then
-      if mov_j0_gt40 = '1' and fase_actual_j0 = '0' then
-        fase_actual_j0 <= '1';
-        load2 <= '1';
-      elsif fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0' then
-        pierde_j0 <= '1';
-      end if;
-
-      if mov_j1_gt40 = '1' and fase_actual_j1 = '0' then
-        fase_actual_j1 <= '1';
-        load2 <= '1';
-      elsif fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0' then
-        pierde_j1 <= '1';
-      end if;
-    end if;
+    borrar_j0 <= '0';
+    borrar_j1 <= '0';
+    
 
     case estado_actual is
       when IDLE =>
@@ -64,5 +66,13 @@ begin
         borrar_j1 <= '1';
         if config_sync = '1' then estado_siguiente <= IDLE; end if;
     end case;
+    if modo_sync = "10" then
+      if (fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0') then
+        pierde_j0 <= '1';
+      end if;
+      if (fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0') then
+        pierde_j1 <= '1';
+      end if;
+    end if;
   end process;
 end structural;

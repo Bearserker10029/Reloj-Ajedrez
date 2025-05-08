@@ -167,8 +167,8 @@ begin
     contadorj1: cont_mov_j port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, mov_j_gt40 => mov_j1_gt40, mov_c_j => mov_c_j1, mov_d_j => mov_d_j1, mov_u_j => mov_u_j1);
 
     -- Contadores para 16 movimientos (fase posterior)
-    contar16movj0: Contador255 generic map (M => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j0, mov_out => open, mov_j_gt40 => mov_j0_gt_16);
-    contar16movj1: Contador255 generic map (M => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, mov_out => open, mov_j_gt40 => mov_j1_gt_16);
+    contar16movj0: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j0, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j0_gt_16);
+    contar16movj1: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j1_gt_16);
 
     -- FSM para control de LEDs
     fsmpierde1: fsm_pierde port map (clk => clk, reset_n => reset_n, pierde_j0 => pierde_j0, pierde_j1 => pierde_j1, leds_0 => leds);

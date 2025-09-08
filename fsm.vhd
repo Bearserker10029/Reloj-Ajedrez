@@ -26,53 +26,112 @@ begin
       estado_actual <= estado_siguiente;
     
       -- Actualización de fases solo en flanco de reloj
-      if modo_sync = "10" then
+      if estado_actual = PLAY and modo_sync = "10" then
         if mov_j0_gt40 = '1' and fase_actual_j0 = '0' then
           fase_actual_j0 <= '1';
-        elsif fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0' then
-          fase_actual_j0 <= '0'; -- Reset fase si se cumple condición
         end if;
         
         if mov_j1_gt40 = '1' and fase_actual_j1 = '0' then
           fase_actual_j1 <= '1';
-        elsif fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0' then
-          fase_actual_j1 <= '0'; -- Reset fase si se cumple condición
         end if;
+      elsif estado_actual = IDLE or estado_actual = CONFIG then
+          fase_actual_j0 <= '0';
+          fase_actual_j1 <= '0';
       end if;
     end if;
   end process;
 
-  process(estado_actual, modo_sync, mov_j0_gt40, mov_j1_gt40, fase_actual_j0, fase_actual_j1)
+  process(estado_actual, config_sync, ini_pausa_sync, jugador_act_sync, modo_sync, min_value_j0, min_value_j1, mov_j0_gt40, mov_j1_gt40, fase_actual_j0, fase_actual_j1, min_value_1hora_j0, min_value_1hora_j1, mov_j0_gt_16, mov_j1_gt_16, bonus_sync)
   begin
+    -- Default values
     estado_siguiente <= estado_actual;
     load2 <= '0';
+    loadbonus <= '0';
     pierde_j0 <= '0';
     pierde_j1 <= '0';
     borrar_j0 <= '0';
     borrar_j1 <= '0';
-    
+    ini_pausa_j0 <= '0';
+    ini_pausa_j1 <= '0';
+    en_sel <= '0';
+    en_j0 <= '0';
+    en_j1 <= '0';
 
     case estado_actual is
       when IDLE =>
-        if config_sync = '1' then estado_siguiente <= CONFIG; end if;
+        borrar_j0 <= '1';
+        borrar_j1 <= '1';
+        if config_sync = '1' then 
+            estado_siguiente <= CONFIG; 
+        else
+            estado_siguiente <= IDLE;
+        end if;
+
       when CONFIG =>
-        if config_sync = '0' then estado_siguiente <= PLAY; end if;
+        en_sel <= '1';
+        load2 <= '1';
+        if config_sync = '0' then 
+            estado_siguiente <= PLAY; 
+        else
+            estado_siguiente <= CONFIG;
+        end if;
+
       when PLAY =>
-        if ini_pausa_sync = '0' then estado_siguiente <= PAUSE; end if;
+        if jugador_act_sync = '0' then
+            ini_pausa_j0 <= '1';
+            ini_pausa_j1 <= '0';
+            en_j0 <= '1';
+            en_j1 <= '0';
+        else
+            ini_pausa_j0 <= '0';
+            ini_pausa_j1 <= '1';
+            en_j0 <= '0';
+            en_j1 <= '1';
+        end if;
+
+        if bonus_sync = '1' then
+            loadbonus <= '1';
+        end if;
+
+        if min_value_j0 = '1' then
+            pierde_j0 <= '1';
+            estado_siguiente <= GAME_OVER;
+        elsif min_value_j1 = '1' then
+            pierde_j1 <= '1';
+            estado_siguiente <= GAME_OVER;
+        end if;
+
+        if modo_sync = "10" then
+          if (fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0') then
+            pierde_j0 <= '1';
+            estado_siguiente <= GAME_OVER;
+          elsif (fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0') then
+            pierde_j1 <= '1';
+            estado_siguiente <= GAME_OVER;
+          end if;
+        end if;
+
+        if ini_pausa_sync = '0' then 
+            estado_siguiente <= PAUSE; 
+        end if;
+
       when PAUSE =>
-        if ini_pausa_sync = '1' then estado_siguiente <= PLAY; end if;
+        ini_pausa_j0 <= '0';
+        ini_pausa_j1 <= '0';
+        if ini_pausa_sync = '1' then 
+            estado_siguiente <= PLAY; 
+        else
+            estado_siguiente <= PAUSE;
+        end if;
+
       when GAME_OVER =>
         borrar_j0 <= '1';
         borrar_j1 <= '1';
-        if config_sync = '1' then estado_siguiente <= IDLE; end if;
+        if config_sync = '1' then 
+            estado_siguiente <= IDLE; 
+        else
+            estado_siguiente <= GAME_OVER;
+        end if;
     end case;
-    if modo_sync = "10" then
-      if (fase_actual_j0 = '1' and min_value_1hora_j0 = '1' and mov_j0_gt_16 = '0') then
-        pierde_j0 <= '1';
-      end if;
-      if (fase_actual_j1 = '1' and min_value_1hora_j1 = '1' and mov_j1_gt_16 = '0') then
-        pierde_j1 <= '1';
-      end if;
-    end if;
   end process;
 end structural;

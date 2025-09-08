@@ -32,7 +32,6 @@ architecture reloj of reloj is
   signal min_seg : std_logic;
   signal en_min : std_logic;
   signal min : std_logic_vector(5 downto 0);
-  signal min_in : std_logic_vector(5 downto 0);
   signal min_min : std_logic;
   signal min_hour : std_logic;
   signal en_hour : std_logic;
@@ -42,6 +41,7 @@ architecture reloj of reloj is
   signal data_seg: std_logic_vector(5 downto 0);
   signal data_min: std_logic_vector(5 downto 0);
   signal data_hour: std_logic_vector(1 downto 0);
+  signal internal_min_value: std_logic;
 
 
 begin
@@ -52,11 +52,12 @@ begin
                                  clk => clk,
 											clk_o=>clk_en);
 											
-	g_reset_n <= (not(borrar) or ini_pausa) and reset_n;
+	g_reset_n <= not(borrar) and reset_n;
 	
 	en_seg <= clk_en and ini_pausa;
-	min_value_1hora <= min_min and min_seg and min_hour;
-	min_value <= min_min and min_seg and min_hour;
+	internal_min_value <= min_min and min_seg and min_hour;
+	min_value <= internal_min_value;
+	min_value_1hora <= internal_min_value;
 	
 	--contador segundos
 	cont_60: counter_mod_seg port map(clk=>clk,
@@ -90,9 +91,8 @@ begin
 	comp2: comparador generic map(N=>N1) port map(A =>min,
 										B => "000000",
 										EQ => min_min);
-	min_in <= min;
 	
-	bin2: bintobcd port map(a =>min_in,
+	bin2: bintobcd port map(a =>min,
 									f =>bintobcd_min);
 	hexa_3 : hexa port map(a=>bintobcd_min(7 downto 4),
                          f=>display_3);
@@ -121,35 +121,40 @@ begin
                          f=>display_4);
 
 
-	process (sel, data_seg, data_min, data_hour, load, load1,loadbonus,Manual_hour,Manual_min,Manual_seg)
+	process (sel, load1, loadbonus, Manual_hour, Manual_min, Manual_seg)
 		begin
-			if sel = "000" then data_hour<="00";
-										data_min<="000101";
-										data_seg<="000000";
-										load<=load1;
-			elsif sel = "001" then data_hour<="00";
-										data_min<="011001";
-										data_seg<="000000";
-										load<=load1;
+			if sel = "000" then 
+                data_hour<="00";
+				data_min<="000101";
+				data_seg<="000000";
+				load<=load1;
+			elsif sel = "001" then 
+                data_hour<="00";
+				data_min<="011001";
+				data_seg<="000000";
+				load<=load1;
 			elsif sel = "010" then 
 				if loadbonus='1' then
-				data_hour<="01";
-				data_min<="000000";
-				data_seg<="000000";
-				load<=loadbonus;
-				else data_hour<="10";
+				    data_hour<="01";
+				    data_min<="000000";
+				    data_seg<="000000";
+				    load<=loadbonus;
+				else 
+                    data_hour<="10";
+				    data_min<="000000";
+				    data_seg<="000000";
+				    load<=load1;
+				end if;
+			elsif sel = "011" then 
+                data_hour<=Manual_hour;
+				data_min<=Manual_min;
+				data_seg<=Manual_seg;
+				load<=load1;
+			else  
+                data_hour<="00";
 				data_min<="000000";
 				data_seg<="000000";
 				load<=load1;
-				end if;
-			elsif sel = "011" then data_hour<=Manual_hour;
-										data_min<=Manual_min;
-										data_seg<=Manual_seg;
-										load<=load1;
-			else  data_hour<="00";
-					data_min<="000000";
-					data_seg<="000000";
-					load<=load1;
 			end if;
 	end process;
 

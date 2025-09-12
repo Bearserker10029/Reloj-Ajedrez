@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.contador_components.all;
+
+entity cont_mov_j is
+  port(
+    clk, reset_n, entrada_j: in std_logic;
+    fase_actual: in std_logic;
+    mov_j_gt40: out std_logic;
+    mov_c_j, mov_d_j, mov_u_j: out std_logic_vector(6 downto 0)
+  );
+end cont_mov_j;
+
+architecture cont of cont_mov_j is
+  signal mov: std_logic_vector(7 downto 0);
+  signal bintobcd_12: std_logic_vector(11 downto 0);
+begin
+  cont_mov: Contador255
+    generic map(M_INICIAL => 40)
+    port map(
+      clk => clk,
+      reset_n => reset_n,
+      entrada_j => entrada_j,
+      umbral_dinamico => 40 when fase_actual = '0' else 16,
+      mov_out => mov,
+      mov_j_gt_umbral => mov_j_gt40
+    );
+
+  bin1: bintobcd1 port map(a => mov, f => bintobcd_12);
+  
+  hexa_1: hexa port map(a => bintobcd_12(11 downto 8), f => mov_c_j);
+  hexa_2: hexa port map(a => bintobcd_12(7 downto 4), f => mov_d_j);
+  hexa_3: hexa port map(a => bintobcd_12(3 downto 0), f => mov_u_j);
+end cont;

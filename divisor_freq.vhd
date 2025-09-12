@@ -21,9 +21,9 @@ use ieee.numeric_std.all;
 entity divisor_freq is
   generic (N         : natural := 50000000;        
            BUS_WIDTH : natural := 26);
-  port (signal reset_n :  in std_logic;
-        signal clk     :  in std_logic;
-        signal clk_o   : out std_logic);
+    port (reset_n :  in std_logic;
+        clk     :  in std_logic;
+        clk_o   : out std_logic);
 end divisor_freq;
 
 architecture structural of divisor_freq is

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_ajedrez
-Thu May 08 01:27:14 2025
+Thu Sep 11 18:59:08 2025
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -16,41 +16,40 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   8. State Machine - |reloj_ajedrez|fsm_pierde:fsmpierde1|estado_pte
   9. State Machine - |reloj_ajedrez|fsm:fsm1|estado_actual
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |reloj_ajedrez
- 15. Parameter Settings for User Entity Instance: divisor_freq:div_freq
- 16. Parameter Settings for User Entity Instance: reloj:relojjugador_0
- 17. Parameter Settings for User Entity Instance: reloj:relojjugador_0|divisor_freq:div
- 18. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp1
- 19. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp2
- 20. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp3
- 21. Parameter Settings for User Entity Instance: reloj:relojjugador_1
- 22. Parameter Settings for User Entity Instance: reloj:relojjugador_1|divisor_freq:div
- 23. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp1
- 24. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp2
- 25. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp3
- 26. Parameter Settings for User Entity Instance: cont_mov_j:contadorj0|Contador255:cont_mov
- 27. Parameter Settings for User Entity Instance: cont_mov_j:contadorj1|Contador255:cont_mov
- 28. Parameter Settings for User Entity Instance: Contador255:contar16movj0
- 29. Parameter Settings for User Entity Instance: Contador255:contar16movj1
- 30. Parameter Settings for User Entity Instance: fsm_pierde:fsmpierde1|divisor_freq:frecuencia
- 31. Port Connectivity Checks: "Contador255:contar16movj1"
- 32. Port Connectivity Checks: "Contador255:contar16movj0"
- 33. Port Connectivity Checks: "cont_mov_j:contadorj1"
- 34. Port Connectivity Checks: "cont_mov_j:contadorj0|Contador255:cont_mov"
- 35. Port Connectivity Checks: "cont_mov_j:contadorj0"
- 36. Port Connectivity Checks: "mux4a1:disp5"
- 37. Port Connectivity Checks: "mux4a1:disp4"
- 38. Port Connectivity Checks: "mux4a1:disp3"
- 39. Port Connectivity Checks: "reloj:relojjugador_0|bintobcd:bin3"
- 40. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp3"
- 41. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp2"
- 42. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp1"
- 43. Post-Synthesis Netlist Statistics for Top Partition
- 44. Elapsed Time Per Partition
- 45. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |reloj_ajedrez
+ 14. Parameter Settings for User Entity Instance: divisor_freq:div_freq
+ 15. Parameter Settings for User Entity Instance: reloj:relojjugador_0
+ 16. Parameter Settings for User Entity Instance: reloj:relojjugador_0|divisor_freq:div
+ 17. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp1
+ 18. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp2
+ 19. Parameter Settings for User Entity Instance: reloj:relojjugador_0|comparador:comp3
+ 20. Parameter Settings for User Entity Instance: reloj:relojjugador_1
+ 21. Parameter Settings for User Entity Instance: reloj:relojjugador_1|divisor_freq:div
+ 22. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp1
+ 23. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp2
+ 24. Parameter Settings for User Entity Instance: reloj:relojjugador_1|comparador:comp3
+ 25. Parameter Settings for User Entity Instance: cont_mov_j:contadorj0|Contador255:cont_mov
+ 26. Parameter Settings for User Entity Instance: cont_mov_j:contadorj1|Contador255:cont_mov
+ 27. Parameter Settings for User Entity Instance: Contador255:contar16movj0
+ 28. Parameter Settings for User Entity Instance: Contador255:contar16movj1
+ 29. Parameter Settings for User Entity Instance: fsm_pierde:fsmpierde1|divisor_freq:frecuencia
+ 30. Port Connectivity Checks: "Contador255:contar16movj1"
+ 31. Port Connectivity Checks: "Contador255:contar16movj0"
+ 32. Port Connectivity Checks: "cont_mov_j:contadorj1"
+ 33. Port Connectivity Checks: "cont_mov_j:contadorj0|Contador255:cont_mov"
+ 34. Port Connectivity Checks: "cont_mov_j:contadorj0"
+ 35. Port Connectivity Checks: "mux4a1:disp5"
+ 36. Port Connectivity Checks: "mux4a1:disp4"
+ 37. Port Connectivity Checks: "mux4a1:disp3"
+ 38. Port Connectivity Checks: "reloj:relojjugador_0|bintobcd:bin3"
+ 39. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp3"
+ 40. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp2"
+ 41. Port Connectivity Checks: "reloj:relojjugador_0|comparador:comp1"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -77,15 +76,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 08 01:27:14 2025       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 11 18:59:08 2025       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; reloj_ajedrez                               ;
 ; Top-level Entity Name              ; reloj_ajedrez                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 1                                           ;
-; Total registers                    ; 1                                           ;
+; Total logic elements               ; 492                                         ;
+;     Total combinational functions  ; 480                                         ;
+;     Dedicated logic registers      ; 111                                         ;
+; Total registers                    ; 111                                         ;
 ; Total pins                         ; 76                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -192,81 +191,124 @@ agreement for further details.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ; < 0.1%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------+---------+
-; bintobcd.vhd                     ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd.vhd                ;         ;
-; bintobcd1.vhd                    ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd1.vhd               ;         ;
-; comparador.vhd                   ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/comparador.vhd              ;         ;
-; component_reloj.vhd              ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj.vhd         ;         ;
-; component_reloj_ajedrez.vhd      ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj_ajedrez.vhd ;         ;
-; cont_mov_j.vhd                   ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd              ;         ;
-; contador_components.vhd          ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador_components.vhd     ;         ;
-; contador255.vhd                  ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador255.vhd             ;         ;
-; counter_mod_hour.vhd             ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_hour.vhd        ;         ;
-; counter_mod_min.vhd              ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_min.vhd         ;         ;
-; counter_mod_seg.vhd              ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_seg.vhd         ;         ;
-; divisor_freq.vhd                 ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/divisor_freq.vhd            ;         ;
-; fsm.vhd                          ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd                     ;         ;
-; fsm_pierde.vhd                   ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm_pierde.vhd              ;         ;
-; hexa.vhd                         ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/hexa.vhd                    ;         ;
-; mux4a1.vhd                       ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/mux4a1.vhd                  ;         ;
-; reg_d1.vhd                       ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d1.vhd                  ;         ;
-; reloj.vhd                        ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd                   ;         ;
-; sincronizador.vhd                ; yes             ; User VHDL File        ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/sincronizador.vhd           ;         ;
-; reloj_ajedrez.vhd                ; yes             ; Auto-Found VHDL File  ; F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd           ;         ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                               ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
+; reloj_ajedrez.vhd                ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd           ;         ;
+; bintobcd.vhd                     ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/bintobcd.vhd                ;         ;
+; bintobcd1.vhd                    ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/bintobcd1.vhd               ;         ;
+; comparador.vhd                   ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/comparador.vhd              ;         ;
+; component_reloj.vhd              ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/component_reloj.vhd         ;         ;
+; component_reloj_ajedrez.vhd      ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/component_reloj_ajedrez.vhd ;         ;
+; cont_mov_j.vhd                   ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/cont_mov_j.vhd              ;         ;
+; contador_components.vhd          ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/contador_components.vhd     ;         ;
+; contador255.vhd                  ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/contador255.vhd             ;         ;
+; counter_mod_hour.vhd             ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/counter_mod_hour.vhd        ;         ;
+; counter_mod_min.vhd              ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/counter_mod_min.vhd         ;         ;
+; counter_mod_seg.vhd              ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/counter_mod_seg.vhd         ;         ;
+; divisor_freq.vhd                 ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/divisor_freq.vhd            ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/fsm.vhd                     ;         ;
+; fsm_pierde.vhd                   ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/fsm_pierde.vhd              ;         ;
+; hexa.vhd                         ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/hexa.vhd                    ;         ;
+; mux4a1.vhd                       ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/mux4a1.vhd                  ;         ;
+; reg_d1.vhd                       ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/reg_d1.vhd                  ;         ;
+; reloj.vhd                        ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/reloj.vhd                   ;         ;
+; sincronizador.vhd                ; yes             ; User VHDL File  ; E:/Github/Reloj-Ajedrez/sincronizador.vhd           ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                         ;
-+---------------------------------------------+---------------------------------------+
-; Resource                                    ; Usage                                 ;
-+---------------------------------------------+---------------------------------------+
-; Estimated Total logic elements              ; 1                                     ;
-;                                             ;                                       ;
-; Total combinational functions               ; 0                                     ;
-; Logic element usage by number of LUT inputs ;                                       ;
-;     -- 4 input functions                    ; 0                                     ;
-;     -- 3 input functions                    ; 0                                     ;
-;     -- <=2 input functions                  ; 0                                     ;
-;                                             ;                                       ;
-; Logic elements by mode                      ;                                       ;
-;     -- normal mode                          ; 0                                     ;
-;     -- arithmetic mode                      ; 0                                     ;
-;                                             ;                                       ;
-; Total registers                             ; 1                                     ;
-;     -- Dedicated logic registers            ; 1                                     ;
-;     -- I/O registers                        ; 0                                     ;
-;                                             ;                                       ;
-; I/O pins                                    ; 76                                    ;
-;                                             ;                                       ;
-; Embedded Multiplier 9-bit elements          ; 0                                     ;
-;                                             ;                                       ;
-; Maximum fan-out node                        ; sincronizador:sincro|ver_disp_sync[0] ;
-; Maximum fan-out                             ; 18                                    ;
-; Total fan-out                               ; 97                                    ;
-; Average fan-out                             ; 0.63                                  ;
-+---------------------------------------------+---------------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 492       ;
+;                                             ;           ;
+; Total combinational functions               ; 480       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 291       ;
+;     -- 3 input functions                    ; 72        ;
+;     -- <=2 input functions                  ; 117       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 406       ;
+;     -- arithmetic mode                      ; 74        ;
+;                                             ;           ;
+; Total registers                             ; 111       ;
+;     -- Dedicated logic registers            ; 111       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 76        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 106       ;
+; Total fan-out                               ; 2110      ;
+; Average fan-out                             ; 2.84      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                 ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+--------------+
-; |reloj_ajedrez             ; 0 (0)             ; 1 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 76   ; 0            ; 0          ; |reloj_ajedrez                      ; work         ;
-;    |sincronizador:sincro|  ; 0 (0)             ; 1 (1)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|sincronizador:sincro ; work         ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
++----------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                          ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+--------------+
+; |reloj_ajedrez                   ; 480 (0)           ; 111 (0)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 76   ; 0            ; 0          ; |reloj_ajedrez                                               ; work         ;
+;    |Contador255:contar16movj0|   ; 10 (10)           ; 8 (8)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|Contador255:contar16movj0                     ; work         ;
+;    |Contador255:contar16movj1|   ; 9 (9)             ; 8 (8)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|Contador255:contar16movj1                     ; work         ;
+;    |cont_mov_j:contadorj0|       ; 52 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj0                         ; work         ;
+;       |bintobcd1:bin1|           ; 38 (38)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj0|bintobcd1:bin1          ; work         ;
+;       |hexa:hexa_2|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj0|hexa:hexa_2             ; work         ;
+;       |hexa:hexa_3|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj0|hexa:hexa_3             ; work         ;
+;    |cont_mov_j:contadorj1|       ; 46 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj1                         ; work         ;
+;       |bintobcd1:bin1|           ; 32 (32)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj1|bintobcd1:bin1          ; work         ;
+;       |hexa:hexa_2|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj1|hexa:hexa_2             ; work         ;
+;       |hexa:hexa_3|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|cont_mov_j:contadorj1|hexa:hexa_3             ; work         ;
+;    |divisor_freq:div_freq|       ; 31 (31)           ; 18 (18)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|divisor_freq:div_freq                         ; work         ;
+;    |fsm:fsm1|                    ; 20 (20)           ; 7 (7)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm:fsm1                                      ; work         ;
+;    |fsm_pierde:fsmpierde1|       ; 52 (5)            ; 32 (5)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm_pierde:fsmpierde1                         ; work         ;
+;       |divisor_freq:frecuencia|  ; 47 (47)           ; 27 (27)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm_pierde:fsmpierde1|divisor_freq:frecuencia ; work         ;
+;    |mux4a1:disp0|                ; 14 (14)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:disp0                                  ; work         ;
+;    |mux4a1:disp1|                ; 24 (24)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:disp1                                  ; work         ;
+;    |mux4a1:disp2|                ; 18 (18)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:disp2                                  ; work         ;
+;    |mux4a1:disp3|                ; 26 (26)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:disp3                                  ; work         ;
+;    |mux4a1:disp4|                ; 8 (8)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:disp4                                  ; work         ;
+;    |reg_d1:reg|                  ; 0 (0)             ; 2 (2)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reg_d1:reg                                    ; work         ;
+;    |reloj:relojjugador_0|        ; 86 (1)            ; 14 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0                          ; work         ;
+;       |bintobcd:bin1|            ; 13 (13)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|bintobcd:bin1            ; work         ;
+;       |bintobcd:bin2|            ; 14 (14)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|bintobcd:bin2            ; work         ;
+;       |comparador:comp1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|comparador:comp1         ; work         ;
+;       |comparador:comp2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|comparador:comp2         ; work         ;
+;       |counter_mod_hour:cont_2|  ; 7 (7)             ; 2 (2)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_hour:cont_2  ; work         ;
+;       |counter_mod_min:cont_min| ; 17 (17)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_min:cont_min ; work         ;
+;       |counter_mod_seg:cont_60|  ; 14 (14)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_seg:cont_60  ; work         ;
+;       |hexa:hexa_1|              ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|hexa:hexa_1              ; work         ;
+;       |hexa:hexa_2|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|hexa:hexa_2              ; work         ;
+;       |hexa:hexa_4|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_0|hexa:hexa_4              ; work         ;
+;    |reloj:relojjugador_1|        ; 84 (2)            ; 14 (0)       ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1                          ; work         ;
+;       |bintobcd:bin1|            ; 13 (13)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|bintobcd:bin1            ; work         ;
+;       |bintobcd:bin2|            ; 14 (14)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|bintobcd:bin2            ; work         ;
+;       |comparador:comp1|         ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|comparador:comp1         ; work         ;
+;       |comparador:comp2|         ; 2 (2)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|comparador:comp2         ; work         ;
+;       |counter_mod_hour:cont_2|  ; 3 (3)             ; 2 (2)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_hour:cont_2  ; work         ;
+;       |counter_mod_min:cont_min| ; 17 (17)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_min:cont_min ; work         ;
+;       |counter_mod_seg:cont_60|  ; 16 (16)           ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_seg:cont_60  ; work         ;
+;       |hexa:hexa_1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|hexa:hexa_1              ; work         ;
+;       |hexa:hexa_2|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|hexa:hexa_2              ; work         ;
+;       |hexa:hexa_4|              ; 7 (7)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:relojjugador_1|hexa:hexa_4              ; work         ;
+;    |sincronizador:sincro|        ; 0 (0)             ; 8 (8)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|sincronizador:sincro                          ; work         ;
++----------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -298,186 +340,86 @@ Encoding Type:  One-Hot
 +-------------------------+-------------------------+---------------------+--------------------+----------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                      ;
-+-------------------------------------------------------------------+---------------------------------------------------------------------+
-; Register name                                                     ; Reason for Removal                                                  ;
-+-------------------------------------------------------------------+---------------------------------------------------------------------+
-; reg_d1:reg|sel[2]                                                 ; Stuck at GND due to stuck port data_in                              ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[3]                 ; Merged with Contador255:contar16movj1|mov[3]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[7]                 ; Merged with Contador255:contar16movj1|mov[7]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[6]                 ; Merged with Contador255:contar16movj1|mov[6]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[5]                 ; Merged with Contador255:contar16movj1|mov[5]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[4]                 ; Merged with Contador255:contar16movj1|mov[4]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[2]                 ; Merged with Contador255:contar16movj1|mov[2]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[1]                 ; Merged with Contador255:contar16movj1|mov[1]                        ;
-; cont_mov_j:contadorj1|Contador255:cont_mov|mov[0]                 ; Merged with Contador255:contar16movj1|mov[0]                        ;
-; reloj:relojjugador_1|divisor_freq:div|clk_o_reg                   ; Merged with reloj:relojjugador_0|divisor_freq:div|clk_o_reg         ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[25]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[25] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[25]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[25] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[24]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[24] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[24]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[24] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[23]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[23] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[23]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[23] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[22]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[22] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[22]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[22] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[21]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[21] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[21]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[21] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[20]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[20] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[20]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[20] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[19]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[19] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[19]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[19] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[18]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[18] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[18]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[18] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[17]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[17] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[17]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[17] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[16]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[16] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[16]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[16] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[15]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[15] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[15]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[15] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[14]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[14] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[14]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[14] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[13]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[13] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[13]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[13] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[12]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[12] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[12]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[12] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[11]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[11] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[11]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[11] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[10]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[10] ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[10]                   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[10] ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[9]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[9]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[9]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[9]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[8]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[8]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[8]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[8]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[7]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[7]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[7]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[7]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[6]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[6]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[6]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[6]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[5]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[5]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[5]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[5]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[4]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[4]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[4]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[4]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[3]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[3]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[3]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[3]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[2]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[2]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[2]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[2]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[1]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[1]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]  ;
-; reloj:relojjugador_0|divisor_freq:div|q_reg[0]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0]  ;
-; reloj:relojjugador_1|divisor_freq:div|q_reg[0]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0]  ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[3]                 ; Merged with Contador255:contar16movj0|mov[3]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[7]                 ; Merged with Contador255:contar16movj0|mov[7]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[6]                 ; Merged with Contador255:contar16movj0|mov[6]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[5]                 ; Merged with Contador255:contar16movj0|mov[5]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[4]                 ; Merged with Contador255:contar16movj0|mov[4]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[2]                 ; Merged with Contador255:contar16movj0|mov[2]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[1]                 ; Merged with Contador255:contar16movj0|mov[1]                        ;
-; cont_mov_j:contadorj0|Contador255:cont_mov|mov[0]                 ; Merged with Contador255:contar16movj0|mov[0]                        ;
-; Contador255:contar16movj1|mov[1..7]                               ; Stuck at GND due to stuck port clock_enable                         ;
-; Contador255:contar16movj0|mov[1..7]                               ; Stuck at GND due to stuck port clock_enable                         ;
-; reg_d1:reg|sel[0,1]                                               ; Stuck at GND due to stuck port clock_enable                         ;
-; Contador255:contar16movj1|mov[0]                                  ; Stuck at GND due to stuck port clock_enable                         ;
-; Contador255:contar16movj0|mov[0]                                  ; Stuck at GND due to stuck port clock_enable                         ;
-; fsm:fsm1|fase_actual_j0                                           ; Stuck at GND due to stuck port data_in                              ;
-; fsm:fsm1|fase_actual_j1                                           ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_1|counter_mod_hour:cont_2|cuenta_actual[0,1]   ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[0..5] ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[0..5]  ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_0|counter_mod_hour:cont_2|cuenta_actual[0,1]   ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[0..5] ; Stuck at GND due to stuck port data_in                              ;
-; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[0..5]  ; Stuck at GND due to stuck port data_in                              ;
-; divisor_freq:div_freq|q_reg[0..18]                                ; Lost fanout                                                         ;
-; fsm_pierde:fsmpierde1|estado_pte.ledj1_0                          ; Lost fanout                                                         ;
-; fsm_pierde:fsmpierde1|estado_pte.ledj1_1                          ; Stuck at GND due to stuck port data_in                              ;
-; sincronizador:sincro|config_sync                                  ; Lost fanout                                                         ;
-; sincronizador:sincro|ini_pausa_sync                               ; Lost fanout                                                         ;
-; fsm:fsm1|estado_actual.IDLE                                       ; Lost fanout                                                         ;
-; fsm:fsm1|estado_actual.CONFIG                                     ; Lost fanout                                                         ;
-; fsm:fsm1|estado_actual.PLAY                                       ; Lost fanout                                                         ;
-; fsm:fsm1|estado_actual.PAUSE                                      ; Lost fanout                                                         ;
-; fsm:fsm1|estado_actual.GAME_OVER                                  ; Lost fanout                                                         ;
-; fsm_pierde:fsmpierde1|estado_pte.ledj0_0                          ; Merged with fsm_pierde:fsmpierde1|estado_pte.inicio                 ;
-; fsm_pierde:fsmpierde1|estado_pte.ledj0_1                          ; Merged with fsm_pierde:fsmpierde1|estado_pte.inicio                 ;
-; fsm_pierde:fsmpierde1|estado_pte.inicio                           ; Stuck at GND due to stuck port data_in                              ;
-; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0..25]        ; Lost fanout                                                         ;
-; sincronizador:sincro|ver_disp_sync[1]                             ; Lost fanout                                                         ;
-; Total Number of Removed Registers = 176                           ;                                                                     ;
-+-------------------------------------------------------------------+---------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                  ;
-+---------------------------------------------------------+--------------------------------+-------------------------------------------------------------------+
-; Register name                                           ; Reason for Removal             ; Registers Removed due to This Register                            ;
-+---------------------------------------------------------+--------------------------------+-------------------------------------------------------------------+
-; reg_d1:reg|sel[2]                                       ; Stuck at GND                   ; reloj:relojjugador_1|counter_mod_hour:cont_2|cuenta_actual[0],    ;
-;                                                         ; due to stuck port data_in      ; reloj:relojjugador_1|counter_mod_hour:cont_2|cuenta_actual[1],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[0],   ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[4],   ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[3],   ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[2],   ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[1],   ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[0],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[5],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[4],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[3],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[2],    ;
-;                                                         ;                                ; reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[1],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_hour:cont_2|cuenta_actual[0],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_hour:cont_2|cuenta_actual[1],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[0],   ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[4],   ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[3],   ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[2],   ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[1],   ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[0],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[5],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[4],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[3],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[2],    ;
-;                                                         ;                                ; reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[1]     ;
-; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[25] ; Lost Fanouts                   ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[24],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[23],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[22],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[21],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[20],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[19],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[18],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[17],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[16],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[15],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[14],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[13],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[12],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[11],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[10],          ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[9],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[8],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[7],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[6],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[5],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[4],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[3],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[2],           ;
-;                                                         ;                                ; fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]            ;
-; divisor_freq:div_freq|q_reg[18]                         ; Lost Fanouts                   ; divisor_freq:div_freq|q_reg[17], divisor_freq:div_freq|q_reg[16], ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[15], divisor_freq:div_freq|q_reg[14], ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[13], divisor_freq:div_freq|q_reg[12], ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[11], divisor_freq:div_freq|q_reg[10], ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[9], divisor_freq:div_freq|q_reg[8],   ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[7], divisor_freq:div_freq|q_reg[6],   ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[5], divisor_freq:div_freq|q_reg[4],   ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[3], divisor_freq:div_freq|q_reg[2],   ;
-;                                                         ;                                ; divisor_freq:div_freq|q_reg[1], divisor_freq:div_freq|q_reg[0]    ;
-; Contador255:contar16movj1|mov[7]                        ; Stuck at GND                   ; fsm:fsm1|fase_actual_j1, sincronizador:sincro|ver_disp_sync[1]    ;
-;                                                         ; due to stuck port clock_enable ;                                                                   ;
-; reg_d1:reg|sel[1]                                       ; Stuck at GND                   ; reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[5],   ;
-;                                                         ; due to stuck port clock_enable ; reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[5]    ;
-; Contador255:contar16movj0|mov[7]                        ; Stuck at GND                   ; fsm:fsm1|fase_actual_j0                                           ;
-;                                                         ; due to stuck port clock_enable ;                                                                   ;
-; fsm_pierde:fsmpierde1|estado_pte.ledj1_1                ; Stuck at GND                   ; fsm_pierde:fsmpierde1|estado_pte.inicio                           ;
-;                                                         ; due to stuck port data_in      ;                                                                   ;
-+---------------------------------------------------------+--------------------------------+-------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                      ;
++---------------------------------------------------+---------------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                                  ;
++---------------------------------------------------+---------------------------------------------------------------------+
+; reg_d1:reg|sel[2]                                 ; Stuck at GND due to stuck port data_in                              ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[3] ; Merged with Contador255:contar16movj1|mov[3]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[7] ; Merged with Contador255:contar16movj1|mov[7]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[6] ; Merged with Contador255:contar16movj1|mov[6]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[5] ; Merged with Contador255:contar16movj1|mov[5]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[4] ; Merged with Contador255:contar16movj1|mov[4]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[2] ; Merged with Contador255:contar16movj1|mov[2]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[1] ; Merged with Contador255:contar16movj1|mov[1]                        ;
+; cont_mov_j:contadorj1|Contador255:cont_mov|mov[0] ; Merged with Contador255:contar16movj1|mov[0]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[3] ; Merged with Contador255:contar16movj0|mov[3]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[7] ; Merged with Contador255:contar16movj0|mov[7]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[6] ; Merged with Contador255:contar16movj0|mov[6]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[5] ; Merged with Contador255:contar16movj0|mov[5]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[4] ; Merged with Contador255:contar16movj0|mov[4]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[2] ; Merged with Contador255:contar16movj0|mov[2]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[1] ; Merged with Contador255:contar16movj0|mov[1]                        ;
+; cont_mov_j:contadorj0|Contador255:cont_mov|mov[0] ; Merged with Contador255:contar16movj0|mov[0]                        ;
+; reloj:relojjugador_1|divisor_freq:div|clk_o_reg   ; Merged with reloj:relojjugador_0|divisor_freq:div|clk_o_reg         ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[25]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[25] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[25]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[25] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[24]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[24] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[24]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[24] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[23]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[23] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[23]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[23] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[22]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[22] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[22]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[22] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[21]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[21] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[21]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[21] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[20]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[20] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[20]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[20] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[19]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[19] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[19]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[19] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[18]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[18] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[18]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[18] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[17]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[17] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[17]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[17] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[16]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[16] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[16]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[16] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[15]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[15] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[15]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[15] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[14]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[14] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[14]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[14] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[13]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[13] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[13]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[13] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[12]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[12] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[12]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[12] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[11]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[11] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[11]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[11] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[10]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[10] ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[10]   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[10] ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[9]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[9]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[9]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[9]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[8]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[8]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[8]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[8]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[7]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[7]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[7]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[7]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[6]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[6]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[6]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[6]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[5]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[5]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[5]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[5]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[4]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[4]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[4]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[4]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[3]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[3]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[3]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[3]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[2]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[2]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[2]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[2]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[1]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[1]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]  ;
+; reloj:relojjugador_0|divisor_freq:div|q_reg[0]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0]  ;
+; reloj:relojjugador_1|divisor_freq:div|q_reg[0]    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0]  ;
+; reloj:relojjugador_0|divisor_freq:div|clk_o_reg   ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|clk_o_reg ;
+; divisor_freq:div_freq|q_reg[0]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[0]  ;
+; divisor_freq:div_freq|q_reg[1]                    ; Merged with fsm_pierde:fsmpierde1|divisor_freq:frecuencia|q_reg[1]  ;
+; Total Number of Removed Registers = 73            ;                                                                     ;
++---------------------------------------------------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -485,24 +427,35 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 111   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Clear ; 111   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 44    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; No         ; |reloj_ajedrez|fsm:fsm1|Selector2 ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |reloj_ajedrez|fsm:fsm1|Selector0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_min:cont_min|cuenta_actual[5] ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_seg:cont_60|cuenta_actual[3]  ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_min:cont_min|cuenta_actual[5] ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_seg:cont_60|cuenta_actual[5]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_1|counter_mod_hour:cont_2|cuenta_actual[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |reloj_ajedrez|reloj:relojjugador_0|counter_mod_hour:cont_2|cuenta_actual[1]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|mux4a1:disp2|f[3]                                              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_ajedrez|mux4a1:disp4|f[6]                                              ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |reloj_ajedrez|mux4a1:disp0|f[6]                                              ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |reloj_ajedrez|reloj:relojjugador_0|data_min[3]                               ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |reloj_ajedrez|reloj:relojjugador_0|data_hour[0]                              ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |reloj_ajedrez|fsm:fsm1|estado_siguiente                                      ;
+; 18:1               ; 6 bits    ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; No         ; |reloj_ajedrez|mux4a1:disp1|f[0]                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -810,14 +763,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 76                          ;
-; cycloneiii_ff         ; 1                           ;
-;     CLR               ; 1                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 2                           ;
+; cycloneiii_ff         ; 111                         ;
+;     CLR               ; 67                          ;
+;     ENA CLR           ; 44                          ;
+; cycloneiii_lcell_comb ; 481                         ;
+;     arith             ; 74                          ;
+;         2 data inputs ; 71                          ;
+;         3 data inputs ; 3                           ;
+;     normal            ; 407                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 69                          ;
+;         4 data inputs ; 291                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -826,7 +787,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -836,183 +797,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu May 08 01:26:54 2025
+    Info: Processing started: Thu Sep 11 18:58:41 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_ajedrez -c reloj_ajedrez
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file reloj_ajedrez.vhd
+    Info (12022): Found design unit 1: reloj_ajedrez-reloj_ajedrez File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 21
+    Info (12023): Found entity 1: reloj_ajedrez File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd.vhd
-    Info (12022): Found design unit 1: bintobcd-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd.vhd Line: 25
-    Info (12023): Found entity 1: bintobcd File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd.vhd Line: 20
+    Info (12022): Found design unit 1: bintobcd-structural File: E:/Github/Reloj-Ajedrez/bintobcd.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd File: E:/Github/Reloj-Ajedrez/bintobcd.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd1.vhd
-    Info (12022): Found design unit 1: bintobcd1-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd1.vhd Line: 25
-    Info (12023): Found entity 1: bintobcd1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/bintobcd1.vhd Line: 20
+    Info (12022): Found design unit 1: bintobcd1-structural File: E:/Github/Reloj-Ajedrez/bintobcd1.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd1 File: E:/Github/Reloj-Ajedrez/bintobcd1.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file cod4a2.vhd
-    Info (12022): Found design unit 1: cod4a2-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cod4a2.vhd Line: 15
-    Info (12023): Found entity 1: cod4a2 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cod4a2.vhd Line: 7
+    Info (12022): Found design unit 1: cod4a2-structural File: E:/Github/Reloj-Ajedrez/cod4a2.vhd Line: 15
+    Info (12023): Found entity 1: cod4a2 File: E:/Github/Reloj-Ajedrez/cod4a2.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
-    Info (12022): Found design unit 1: comparador-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/comparador.vhd Line: 14
-    Info (12023): Found entity 1: comparador File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/comparador.vhd Line: 7
+    Info (12022): Found design unit 1: comparador-structural File: E:/Github/Reloj-Ajedrez/comparador.vhd Line: 14
+    Info (12023): Found entity 1: comparador File: E:/Github/Reloj-Ajedrez/comparador.vhd Line: 7
 Info (12021): Found 1 design units, including 0 entities, in source file component_reloj.vhd
-    Info (12022): Found design unit 1: component_reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj.vhd Line: 7
+    Info (12022): Found design unit 1: component_reloj File: E:/Github/Reloj-Ajedrez/component_reloj.vhd Line: 7
 Info (12021): Found 1 design units, including 0 entities, in source file component_reloj_ajedrez.vhd
-    Info (12022): Found design unit 1: component_reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/component_reloj_ajedrez.vhd Line: 4
+    Info (12022): Found design unit 1: component_reloj_ajedrez File: E:/Github/Reloj-Ajedrez/component_reloj_ajedrez.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cont_mov_j.vhd
-    Info (12022): Found design unit 1: cont_mov_j-cont File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 14
-    Info (12023): Found entity 1: cont_mov_j File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 5
+    Info (12022): Found design unit 1: cont_mov_j-cont File: E:/Github/Reloj-Ajedrez/cont_mov_j.vhd Line: 14
+    Info (12023): Found entity 1: cont_mov_j File: E:/Github/Reloj-Ajedrez/cont_mov_j.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file contador_components.vhd
-    Info (12022): Found design unit 1: contador_components File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador_components.vhd Line: 7
+    Info (12022): Found design unit 1: contador_components File: E:/Github/Reloj-Ajedrez/contador_components.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file contador255.vhd
-    Info (12022): Found design unit 1: Contador255-cont File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador255.vhd Line: 16
-    Info (12023): Found entity 1: Contador255 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/contador255.vhd Line: 5
+    Info (12022): Found design unit 1: Contador255-cont File: E:/Github/Reloj-Ajedrez/contador255.vhd Line: 16
+    Info (12023): Found entity 1: Contador255 File: E:/Github/Reloj-Ajedrez/contador255.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_hour.vhd
-    Info (12022): Found design unit 1: counter_mod_hour-counter_mod_hour File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_hour.vhd Line: 16
-    Info (12023): Found entity 1: counter_mod_hour File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_hour.vhd Line: 8
+    Info (12022): Found design unit 1: counter_mod_hour-counter_mod_hour File: E:/Github/Reloj-Ajedrez/counter_mod_hour.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_hour File: E:/Github/Reloj-Ajedrez/counter_mod_hour.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_min.vhd
-    Info (12022): Found design unit 1: counter_mod_min-counter_mod_min File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_min.vhd Line: 16
-    Info (12023): Found entity 1: counter_mod_min File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_min.vhd Line: 8
+    Info (12022): Found design unit 1: counter_mod_min-counter_mod_min File: E:/Github/Reloj-Ajedrez/counter_mod_min.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_min File: E:/Github/Reloj-Ajedrez/counter_mod_min.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file counter_mod_seg.vhd
-    Info (12022): Found design unit 1: counter_mod_seg-counter_mod_seg File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_seg.vhd Line: 16
-    Info (12023): Found entity 1: counter_mod_seg File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/counter_mod_seg.vhd Line: 8
+    Info (12022): Found design unit 1: counter_mod_seg-counter_mod_seg File: E:/Github/Reloj-Ajedrez/counter_mod_seg.vhd Line: 16
+    Info (12023): Found entity 1: counter_mod_seg File: E:/Github/Reloj-Ajedrez/counter_mod_seg.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file deco2a4.vhd
-    Info (12022): Found design unit 1: deco2a4-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/deco2a4.vhd Line: 15
-    Info (12023): Found entity 1: deco2a4 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/deco2a4.vhd Line: 7
+    Info (12022): Found design unit 1: deco2a4-ejemplo File: E:/Github/Reloj-Ajedrez/deco2a4.vhd Line: 15
+    Info (12023): Found entity 1: deco2a4 File: E:/Github/Reloj-Ajedrez/deco2a4.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_freq.vhd
-    Info (12022): Found design unit 1: divisor_freq-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/divisor_freq.vhd Line: 29
-    Info (12023): Found entity 1: divisor_freq File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/divisor_freq.vhd Line: 21
+    Info (12022): Found design unit 1: divisor_freq-structural File: E:/Github/Reloj-Ajedrez/divisor_freq.vhd Line: 29
+    Info (12023): Found entity 1: divisor_freq File: E:/Github/Reloj-Ajedrez/divisor_freq.vhd Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file ff_d.vhd
-    Info (12022): Found design unit 1: ff_d-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/ff_d.vhd Line: 15
-    Info (12023): Found entity 1: ff_d File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/ff_d.vhd Line: 7
+    Info (12022): Found design unit 1: ff_d-ejemplo File: E:/Github/Reloj-Ajedrez/ff_d.vhd Line: 15
+    Info (12023): Found entity 1: ff_d File: E:/Github/Reloj-Ajedrez/ff_d.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
-    Info (12022): Found design unit 1: fsm-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 14
-    Info (12023): Found entity 1: fsm File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 4
+    Info (12022): Found design unit 1: fsm-structural File: E:/Github/Reloj-Ajedrez/fsm.vhd Line: 14
+    Info (12023): Found entity 1: fsm File: E:/Github/Reloj-Ajedrez/fsm.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file fsm_pierde.vhd
-    Info (12022): Found design unit 1: fsm_pierde-fsm_pierde File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm_pierde.vhd Line: 12
-    Info (12023): Found entity 1: fsm_pierde File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm_pierde.vhd Line: 7
+    Info (12022): Found design unit 1: fsm_pierde-fsm_pierde File: E:/Github/Reloj-Ajedrez/fsm_pierde.vhd Line: 12
+    Info (12023): Found entity 1: fsm_pierde File: E:/Github/Reloj-Ajedrez/fsm_pierde.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file hexa.vhd
-    Info (12022): Found design unit 1: hexa-structural_0 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/hexa.vhd Line: 19
-    Info (12023): Found entity 1: hexa File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/hexa.vhd Line: 14
+    Info (12022): Found design unit 1: hexa-structural_0 File: E:/Github/Reloj-Ajedrez/hexa.vhd Line: 19
+    Info (12023): Found entity 1: hexa File: E:/Github/Reloj-Ajedrez/hexa.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file mux4a1.vhd
-    Info (12022): Found design unit 1: mux4a1-mux File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/mux4a1.vhd Line: 15
-    Info (12023): Found entity 1: mux4a1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/mux4a1.vhd Line: 7
+    Info (12022): Found design unit 1: mux4a1-mux File: E:/Github/Reloj-Ajedrez/mux4a1.vhd Line: 15
+    Info (12023): Found entity 1: mux4a1 File: E:/Github/Reloj-Ajedrez/mux4a1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file reg_d.vhd
-    Info (12022): Found design unit 1: reg_d-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d.vhd Line: 16
-    Info (12023): Found entity 1: reg_d File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d.vhd Line: 7
+    Info (12022): Found design unit 1: reg_d-ejemplo File: E:/Github/Reloj-Ajedrez/reg_d.vhd Line: 16
+    Info (12023): Found entity 1: reg_d File: E:/Github/Reloj-Ajedrez/reg_d.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file reg_d1.vhd
-    Info (12022): Found design unit 1: reg_d1-ejemplo File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d1.vhd Line: 18
-    Info (12023): Found entity 1: reg_d1 File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reg_d1.vhd Line: 7
+    Info (12022): Found design unit 1: reg_d1-ejemplo File: E:/Github/Reloj-Ajedrez/reg_d1.vhd Line: 18
+    Info (12023): Found entity 1: reg_d1 File: E:/Github/Reloj-Ajedrez/reg_d1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file reloj.vhd
-    Info (12022): Found design unit 1: reloj-reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 24
-    Info (12023): Found entity 1: reloj File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 9
+    Info (12022): Found design unit 1: reloj-reloj File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 24
+    Info (12023): Found entity 1: reloj File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sincronizador.vhd
-    Info (12022): Found design unit 1: sincronizador-structural File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/sincronizador.vhd Line: 23
-    Info (12023): Found entity 1: sincronizador File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/sincronizador.vhd Line: 4
-Warning (12125): Using design file reloj_ajedrez.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: reloj_ajedrez-reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 21
-    Info (12023): Found entity 1: reloj_ajedrez File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 6
+    Info (12022): Found design unit 1: sincronizador-structural File: E:/Github/Reloj-Ajedrez/sincronizador.vhd Line: 23
+    Info (12023): Found entity 1: sincronizador File: E:/Github/Reloj-Ajedrez/sincronizador.vhd Line: 4
 Info (12127): Elaborating entity "reloj_ajedrez" for the top level hierarchy
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div_freq" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 45
-Info (12128): Elaborating entity "sincronizador" for hierarchy "sincronizador:sincro" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 50
-Info (12128): Elaborating entity "reloj" for hierarchy "reloj:relojjugador_0" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 69
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:relojjugador_0|divisor_freq:div" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 49
-Info (12128): Elaborating entity "counter_mod_seg" for hierarchy "reloj:relojjugador_0|counter_mod_seg:cont_60" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 62
-Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 69
-Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:relojjugador_0|bintobcd:bin1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 72
-Info (12128): Elaborating entity "hexa" for hierarchy "reloj:relojjugador_0|hexa:hexa_1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 74
-Info (12128): Elaborating entity "counter_mod_min" for hierarchy "reloj:relojjugador_0|counter_mod_min:cont_min" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 83
-Info (12128): Elaborating entity "counter_mod_hour" for hierarchy "reloj:relojjugador_0|counter_mod_hour:cont_2" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 105
-Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp3" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj.vhd Line: 111
-Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 116
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "ini_pausa_j0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "ini_pausa_j1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_sel" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_j0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "en_j1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at fsm.vhd(10): used implicit default value for signal "loadbonus" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 10
-Warning (10492): VHDL Process Statement warning at fsm.vhd(57): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at fsm.vhd(59): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at fsm.vhd(61): signal "ini_pausa_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 61
-Warning (10492): VHDL Process Statement warning at fsm.vhd(63): signal "ini_pausa_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at fsm.vhd(67): signal "config_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 67
-Warning (10492): VHDL Process Statement warning at fsm.vhd(70): signal "min_value_1hora_j0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at fsm.vhd(70): signal "mov_j0_gt_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at fsm.vhd(73): signal "min_value_1hora_j1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at fsm.vhd(73): signal "mov_j1_gt_16" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/fsm.vhd Line: 73
-Info (12128): Elaborating entity "reg_d1" for hierarchy "reg_d1:reg" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 148
-Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:disp0" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 158
-Info (12128): Elaborating entity "cont_mov_j" for hierarchy "cont_mov_j:contadorj0" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 166
-Info (12128): Elaborating entity "Contador255" for hierarchy "cont_mov_j:contadorj0|Contador255:cont_mov" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 21
-Info (12128): Elaborating entity "bintobcd1" for hierarchy "cont_mov_j:contadorj0|bintobcd1:bin1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/cont_mov_j.vhd Line: 32
-Info (12128): Elaborating entity "Contador255" for hierarchy "Contador255:contar16movj0" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 170
-Info (12128): Elaborating entity "fsm_pierde" for hierarchy "fsm_pierde:fsmpierde1" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 174
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div_freq" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 45
+Info (12128): Elaborating entity "sincronizador" for hierarchy "sincronizador:sincro" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 50
+Info (12128): Elaborating entity "reloj" for hierarchy "reloj:relojjugador_0" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 69
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:relojjugador_0|divisor_freq:div" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 49
+Info (12128): Elaborating entity "counter_mod_seg" for hierarchy "reloj:relojjugador_0|counter_mod_seg:cont_60" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 63
+Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp1" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 70
+Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:relojjugador_0|bintobcd:bin1" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 73
+Info (12128): Elaborating entity "hexa" for hierarchy "reloj:relojjugador_0|hexa:hexa_1" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 75
+Info (12128): Elaborating entity "counter_mod_min" for hierarchy "reloj:relojjugador_0|counter_mod_min:cont_min" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 84
+Info (12128): Elaborating entity "counter_mod_hour" for hierarchy "reloj:relojjugador_0|counter_mod_hour:cont_2" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 105
+Info (12128): Elaborating entity "comparador" for hierarchy "reloj:relojjugador_0|comparador:comp3" File: E:/Github/Reloj-Ajedrez/reloj.vhd Line: 111
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 116
+Info (12128): Elaborating entity "reg_d1" for hierarchy "reg_d1:reg" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 148
+Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:disp0" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 158
+Info (12128): Elaborating entity "cont_mov_j" for hierarchy "cont_mov_j:contadorj0" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 166
+Info (12128): Elaborating entity "Contador255" for hierarchy "cont_mov_j:contadorj0|Contador255:cont_mov" File: E:/Github/Reloj-Ajedrez/cont_mov_j.vhd Line: 21
+Info (12128): Elaborating entity "bintobcd1" for hierarchy "cont_mov_j:contadorj0|bintobcd1:bin1" File: E:/Github/Reloj-Ajedrez/cont_mov_j.vhd Line: 32
+Info (12128): Elaborating entity "Contador255" for hierarchy "Contador255:contar16movj0" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 170
+Info (12128): Elaborating entity "fsm_pierde" for hierarchy "fsm_pierde:fsmpierde1" File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 174
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display0[0]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[1]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[2]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[3]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[4]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[5]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display0[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[0]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[1]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[2]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[3]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[4]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[5]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display1[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[0]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[1]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[2]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[3]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[4]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[5]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display2[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display3[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display4[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "display5[6]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 16
-    Warning (13410): Pin "leds[0]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[1]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[2]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[3]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[4]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[5]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[6]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[7]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[8]" is stuck at GND File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
-    Warning (13410): Pin "leds[9]" is stuck at VCC File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 17
+    Warning (13410): Pin "display5[6]" is stuck at VCC File: E:/Github/Reloj-Ajedrez/reloj_ajedrez.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 54 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 21 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "jugador_act" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 12
-    Warning (15610): No output dependent on input pin "bonus" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 12
-    Warning (15610): No output dependent on input pin "modo[0]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 13
-    Warning (15610): No output dependent on input pin "modo[1]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 13
-    Warning (15610): No output dependent on input pin "Manual_hour[0]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 14
-    Warning (15610): No output dependent on input pin "Manual_hour[1]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 14
-    Warning (15610): No output dependent on input pin "Manual_min[0]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_min[1]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_min[2]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_min[3]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_min[4]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_min[5]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[0]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[1]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[2]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[3]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[4]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "Manual_seg[5]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 15
-    Warning (15610): No output dependent on input pin "config" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 12
-    Warning (15610): No output dependent on input pin "ini_pausa" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 12
-    Warning (15610): No output dependent on input pin "ver_disp[1]" File: F:/Clases/DISEÑO DIGITAL/1IEE04/PROYECTO-VERSION FINAL/SOL/reloj_ajedrez.vhd Line: 13
-Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 570 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
-    Info: Peak virtual memory: 4992 megabytes
-    Info: Processing ended: Thu May 08 01:27:14 2025
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info (21061): Implemented 494 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 5015 megabytes
+    Info: Processing ended: Thu Sep 11 18:59:08 2025
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:50
 
 

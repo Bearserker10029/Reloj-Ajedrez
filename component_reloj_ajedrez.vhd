@@ -62,12 +62,13 @@ package component_reloj_ajedrez is
     end component;
 
     component Contador255
-        generic (M : natural := 40);
-        port (
-            clk, reset_n    : in  std_logic;
-            entrada_j       : in  std_logic;
-            mov_out         : out std_logic_vector(7 downto 0);
-            mov_j_gt40      : out std_logic
+        generic(M_INICIAL : natural := 40);
+        port(
+            clk, reset_n: in std_logic;
+            entrada_j: in std_logic;
+            umbral_dinamico: in natural;
+            mov_out: out std_logic_vector(7 downto 0);
+            mov_j_gt_umbral: out std_logic
         );
     end component;
 

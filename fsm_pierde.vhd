@@ -35,13 +35,13 @@ architecture fsm_pierde of fsm_pierde is
 		 end if;
 	  end process;
 	  
-	  pierde: process(estado_pte, pierde_j0,pierde_j1)
+	  	  pierde: process(estado_pte, pierde_j0,pierde_j1)
 	  begin 
 	  case estado_pte is
 	  
 	  when inicio=>
-	  leds_0(9 downto 5)<="-----";
-	  leds_0(4 downto 0)<="-----";
+	  leds_0(9 downto 5)<="00000";
+	  leds_0(4 downto 0)<="00000";
 	  if pierde_j0='1' then estado_sgte<=ledj0_0;
 	  elsif pierde_j1='1' then estado_sgte<=ledj1_0;
 	  else estado_sgte<= inicio;
@@ -65,7 +65,7 @@ architecture fsm_pierde of fsm_pierde is
 	  when ledj1_1=>
 	  leds_0(9 downto 5)<="00000";
 	  leds_0(4 downto 0)<="01010";
-	  estado_sgte<=inicio;
+	  estado_sgte<=ledj1_0;
 	 end case;
 	 end process;
 	  

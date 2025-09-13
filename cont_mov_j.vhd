@@ -7,6 +7,7 @@ entity cont_mov_j is
     clk, reset_n, entrada_j: in std_logic;
     fase_actual: in std_logic;
     mov_j_gt40: out std_logic;
+    mov_out: out std_logic_vector(7 downto 0);
     mov_c_j, mov_d_j, mov_u_j: out std_logic_vector(6 downto 0)
   );
 end cont_mov_j;
@@ -34,4 +35,7 @@ begin
   hexa_1: hexa port map(a => bintobcd_12(11 downto 8), f => mov_c_j);
   hexa_2: hexa port map(a => bintobcd_12(7 downto 4), f => mov_d_j);
   hexa_3: hexa port map(a => bintobcd_12(3 downto 0), f => mov_u_j);
+  
+  mov_out <= mov;
+  
 end cont;

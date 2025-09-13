@@ -12,10 +12,11 @@ entity reloj is
 			  N1        : natural := 6;
 			  N2        : natural := 2
 			  );
-  port(signal clk, reset_n, ini_pausa, borrar, load1, loadbonus: in std_logic;
+  port(signal clk, reset_n, ini_pausa, borrar, load1, loadbonus, wcc_load: in std_logic;
 		signal sel:in std_logic_vector(2 downto 0);
 		signal Manual_hour: in std_logic_vector(1 downto 0);
-		signal Manual_min, Manual_seg: in std_logic_vector(5 downto 0);
+		signal Manual_min, Manual_seg, Manual_bonus_seg: in std_logic_vector(5 downto 0);
+		signal mov_in: in std_logic_vector(7 downto 0);
 		signal display_3, display_2, display_1, display_0,display_4,display_5: out std_logic_vector(6 downto 0);
 		signal min_value, min_value_1hora: out std_logic
 	    );
@@ -42,7 +43,8 @@ architecture reloj of reloj is
   signal data_min: std_logic_vector(5 downto 0);
   signal data_hour: std_logic_vector(1 downto 0);
   signal internal_min_value: std_logic;
-
+  signal bonus_seconds: integer range 0 to 2550;
+  signal total_seconds: integer;
 
 begin
 	
@@ -121,24 +123,42 @@ begin
                          f=>display_4);
 
 
-	process (sel, load1, loadbonus, Manual_hour, Manual_min, Manual_seg)
+	process (sel, load1, loadbonus, Manual_hour, Manual_min, Manual_seg, mov_in, Manual_bonus_seg, hour, min, seg, wcc_load)
 		begin
 			if sel = "000" then 
-                data_hour<="00";
-				data_min<="000101";
-				data_seg<="000000";
-				load<=load1;
+				if loadbonus = '1' then
+					bonus_seconds <= to_integer(unsigned(mov_in)) * 2;
+					total_seconds <= to_integer(unsigned(hour)) * 3600 + to_integer(unsigned(min)) * 60 + to_integer(unsigned(seg)) + bonus_seconds;
+					data_hour <= std_logic_vector(to_unsigned(total_seconds / 3600, 2));
+					data_min <= std_logic_vector(to_unsigned((total_seconds mod 3600) / 60, 6));
+					data_seg <= std_logic_vector(to_unsigned(total_seconds mod 60, 6));
+					load <= loadbonus;
+				else
+					data_hour<="00";
+					data_min<="000101";
+					data_seg<="000000";
+					load<=load1;
+				end if;
 			elsif sel = "001" then 
-                data_hour<="00";
-				data_min<="011001";
-				data_seg<="000000";
-				load<=load1;
+				if loadbonus = '1' then
+					bonus_seconds <= to_integer(unsigned(mov_in)) * 10;
+					total_seconds <= to_integer(unsigned(hour)) * 3600 + to_integer(unsigned(min)) * 60 + to_integer(unsigned(seg)) + bonus_seconds;
+					data_hour <= std_logic_vector(to_unsigned(total_seconds / 3600, 2));
+					data_min <= std_logic_vector(to_unsigned((total_seconds mod 3600) / 60, 6));
+					data_seg <= std_logic_vector(to_unsigned(total_seconds mod 60, 6));
+					load <= loadbonus;
+				else
+					data_hour<="00";
+					data_min<="011001";
+					data_seg<="000000";
+					load<=load1;
+				end if;
 			elsif sel = "010" then 
-				if loadbonus='1' then
+				if wcc_load='1' then
 				    data_hour<="01";
 				    data_min<="000000";
 				    data_seg<="000000";
-				    load<=loadbonus;
+				    load<=wcc_load;
 				else 
                     data_hour<="10";
 				    data_min<="000000";
@@ -146,10 +166,19 @@ begin
 				    load<=load1;
 				end if;
 			elsif sel = "011" then 
-                data_hour<=Manual_hour;
-				data_min<=Manual_min;
-				data_seg<=Manual_seg;
-				load<=load1;
+				if loadbonus = '1' then
+					bonus_seconds <= to_integer(unsigned(mov_in)) * to_integer(unsigned(Manual_bonus_seg));
+					total_seconds <= to_integer(unsigned(hour)) * 3600 + to_integer(unsigned(min)) * 60 + to_integer(unsigned(seg)) + bonus_seconds;
+					data_hour <= std_logic_vector(to_unsigned(total_seconds / 3600, 2));
+					data_min <= std_logic_vector(to_unsigned((total_seconds mod 3600) / 60, 6));
+					data_seg <= std_logic_vector(to_unsigned(total_seconds mod 60, 6));
+					load <= loadbonus;
+				else
+					data_hour<=Manual_hour;
+					data_min<=Manual_min;
+					data_seg<=Manual_seg;
+					load<=load1;
+				end if;
 			else  
                 data_hour<="00";
 				data_min<="000000";

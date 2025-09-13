@@ -12,7 +12,7 @@ entity reloj_ajedrez is
         reset_n, clk, config, ini_pausa, jugador_act, bonus : in  std_logic;
         modo, ver_disp                                      : in  std_logic_vector(1 downto 0);
         Manual_hour                                         : in  std_logic_vector(1 downto 0);
-        Manual_min, Manual_seg                              : in  std_logic_vector(5 downto 0);
+        Manual_min, Manual_seg, Manual_bonus_seg            : in  std_logic_vector(5 downto 0);
         display0, display1, display2, display3, display4, display5: out std_logic_vector(6 downto 0);
         leds                                                : out std_logic_vector(9 downto 0)
     );
@@ -27,6 +27,9 @@ architecture reloj_ajedrez of reloj_ajedrez is
     signal en, min_value_j0, min_value_j1, ini_pausa_j0, borrar_j0, ini_pausa_j1, borrar_j1: std_logic;
     signal en_sel, en_j0, en_j1, mov_j0_gt40, mov_j1_gt40, load3: std_logic;
     signal min_value_1hora_j0, min_value_1hora_j1, loadbonus, pierde_j0, pierde_j1: std_logic;
+    signal fase_actual_j0, fase_actual_j1: std_logic;
+    signal wcc_load_j0, wcc_load_j1: std_logic;
+    signal reset_16_j0, reset_16_j1: std_logic;
 
     -- Señales del reloj
     signal sel: std_logic_vector(2 downto 0);
@@ -37,6 +40,7 @@ architecture reloj_ajedrez of reloj_ajedrez is
 
     -- Señales de los contadores de movimientos
     signal mov_u_j0, mov_u_j1, mov_d_j0, mov_d_j1, mov_c_j0, mov_c_j1: std_logic_vector(6 downto 0);
+    signal mov_j0, mov_j1: std_logic_vector(7 downto 0);
     signal entrada_j0, entrada_j1: std_logic;
     signal mov_j0_gt_16, mov_j1_gt_16: std_logic;
 
@@ -74,6 +78,8 @@ begin
             Manual_hour       => Manual_hour,
             Manual_min        => Manual_min,
             Manual_seg        => Manual_seg,
+            Manual_bonus_seg  => Manual_bonus_seg,
+            mov_in            => mov_j0,
             ini_pausa         => ini_pausa_j0,
             borrar            => borrar_j0,
             sel               => sel,
@@ -86,7 +92,8 @@ begin
             display_4         => display_4_j0,
             display_5         => display_5_j0,
             load1             => load3,
-            loadbonus         => loadbonus
+            loadbonus         => loadbonus,
+            wcc_load          => wcc_load_j0
         );
 
     relojjugador_1: entity work.reloj
@@ -97,6 +104,8 @@ begin
             Manual_hour       => Manual_hour,
             Manual_min        => Manual_min,
             Manual_seg        => Manual_seg,
+            Manual_bonus_seg  => Manual_bonus_seg,
+            mov_in            => mov_j1,
             ini_pausa         => ini_pausa_j1,
             borrar            => borrar_j1,
             sel               => sel,
@@ -109,7 +118,8 @@ begin
             display_4         => display_4_j1,
             display_5         => display_5_j1,
             load1             => load3,
-            loadbonus         => loadbonus
+            loadbonus         => loadbonus,
+            wcc_load          => wcc_load_j1
         );
 
     -- FSM principal
@@ -141,7 +151,13 @@ begin
             loadbonus           => loadbonus,
             pierde_j0           => pierde_j0,
             pierde_j1           => pierde_j1,
-            bonus_sync          => bonus_sync
+            bonus_sync          => bonus_sync,
+            fase_actual_j0      => fase_actual_j0,
+            fase_actual_j1      => fase_actual_j1,
+            wcc_load_j0         => wcc_load_j0,
+            wcc_load_j1         => wcc_load_j1,
+            reset_16_j0         => reset_16_j0,
+            reset_16_j1         => reset_16_j1
         );
 
     -- Registro para selección de modo
@@ -163,12 +179,12 @@ begin
     disp5: mux4a1 port map (a => display_5_j0, b => "1111111", c => display_5_j1, d => "1111111", sel => ver_disp_sync, f => display5);
 
     -- Contadores de movimientos
-    contadorj0: cont_mov_j port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j0, mov_j_gt40 => mov_j0_gt40, mov_c_j => mov_c_j0, mov_d_j => mov_d_j0, mov_u_j => mov_u_j0);
-    contadorj1: cont_mov_j port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, mov_j_gt40 => mov_j1_gt40, mov_c_j => mov_c_j1, mov_d_j => mov_d_j1, mov_u_j => mov_u_j1);
+    contadorj0: cont_mov_j port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j0, mov_j_gt40 => mov_j0_gt40, mov_c_j => mov_c_j0, mov_d_j => mov_d_j0, mov_u_j => mov_u_j0, mov_out => mov_j0, fase_actual => fase_actual_j0);
+    contadorj1: cont_mov_j port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, mov_j_gt40 => mov_j1_gt40, mov_c_j => mov_c_j1, mov_d_j => mov_d_j1, mov_u_j => mov_u_j1, mov_out => mov_j1, fase_actual => fase_actual_j1);
 
     -- Contadores para 16 movimientos (fase posterior)
-    contar16movj0: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j0, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j0_gt_16);
-    contar16movj1: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n, entrada_j => entrada_j1, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j1_gt_16);
+    contar16movj0: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n and not(reset_16_j0), entrada_j => entrada_j0, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j0_gt_16);
+    contar16movj1: entity work.Contador255 generic map (M_INICIAL => 16) port map (clk => clk, reset_n => reset_n and not(reset_16_j1), entrada_j => entrada_j1, umbral_dinamico => 16, mov_out => open, mov_j_gt_umbral  => mov_j1_gt_16);
 
     -- FSM para control de LEDs
     fsmpierde1: fsm_pierde port map (clk => clk, reset_n => reset_n, pierde_j0 => pierde_j0, pierde_j1 => pierde_j1, leds_0 => leds);
